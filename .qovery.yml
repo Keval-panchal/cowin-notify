@@ -1,0 +1,15 @@
+---
+application:
+  name: "cowin-notify"
+  project: "cowin-notify"
+  organization: "QoveryCommunity"
+databases:
+- type: "MYSQL"
+  name: "cowin"
+  version: "8.0"
+routers:
+- name: "main-cowin-notify"
+  routes:
+  - application_name: "cowin-notify"
+    paths:
+    - "/*"
